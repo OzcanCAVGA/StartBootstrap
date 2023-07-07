@@ -63,6 +63,8 @@ header {
     font-weight: normal;
 }
 
+
+
 li>a {
 
     text-decoration: none;
@@ -72,8 +74,8 @@ li>a {
 
 }
 
-li>a:hover {
-    color: var(--secondary-color);
+.navbar-button:hover {
+    color: white;
 }
 
 li>a:active {
@@ -248,39 +250,35 @@ li>a:active {
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-color);
-    height: 36rem;
+    height: auto;
     color: white;
-    padding: 1.5rem;
+    padding: 5rem 3rem;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+
+}
+
+.content>p {
+    width: 33%;
+    margin: 0.5rem 0.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 50%;
-}
-
-.about-content .content {
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    font-size: 1.3rem;
-}
-
-.content>p {
-
-    padding: 1rem;
-    line-height: 2.2rem;
-    font-weight: 300;
-    font-size: 1.5rem;
-    margin: 1.2rem;
+    width: 67%;
 }
 
 .about-content button {
     font-family: 'Lato', sans-serif;
-
-    width: auto;
     padding: 1.5rem 2rem;
     font-size: 1.6rem;
     border: 0.1rem solid white;
@@ -288,7 +286,8 @@ li>a:active {
     background-color: var(--secondary-color);
     color: white;
     transition: background-color 0.3s ease, color 0.3s ease;
-
+    width: 15%;
+    margin: 2.5rem 0;
 }
 
 .about-content button>i {
@@ -416,7 +415,7 @@ textarea {
     color: var(--primary-color);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 1px){
     header {
         background-color: var(--primary-color);
         display: flex;
@@ -477,10 +476,11 @@ textarea {
         justify-content: center;
         align-items: center;
         background-color: var(--secondary-color);
-        color: white;
         height: auto;
-        padding: 3rem 0;
+        color: white;
+        padding: 5rem 1.5rem;
     }
+
 
     .about-content {
         display: flex;
@@ -499,9 +499,17 @@ textarea {
 
     .content {
         display: flex;
+        justify-content: start;
         flex-direction: column;
         width: 100%;
     }
+
+    .content>p {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+
 
     .contact-content form {
         width: 47rem;
@@ -512,8 +520,149 @@ textarea {
         color: white;
         background-color: var(--primary-color);
     }
+    .footer-section{
+        width: auto;
+    }
 
-    .first-article-container {}
+
+    .footer-first-article {
+        display: flex;
+        padding: 3rem 0;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+
+    .about-content button {
+        font-family: 'Lato', sans-serif;
+
+        width: auto;
+        padding: 1.5rem 2rem;
+        font-size: 1.6rem;
+        border: 0.1rem solid white;
+        border-radius: 0.5rem;
+        background-color: var(--secondary-color);
+        color: white;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+    }
+
+}
+
+@media(max-width: 1024px) and (min-width:769px){
+    header {
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: space-between;
+        padding: 1.6rem 0;
+        align-items: center;
+        position: fixed;
+        width: 113%;
+        z-index: 999999;
+    }
+
+    .logo {
+        margin-left: 5%;
+    }
+
+    #startBootstrap {
+        text-align: center;
+    }
+
+    .navbar>ul>li {
+        display: none;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .navbar>ul>li:last-child {
+        display: block;
+        padding: 1rem 0.5rem;
+
+    }
+
+    li>a,
+    li>a:active {
+
+        padding: 1rem;
+    }
+
+
+    .portfolio-content {
+        padding: 2.5rem 0;
+        width: 110%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        cursor: pointer;
+    }
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+        margin: 1.8rem 2rem;
+    }
+
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--secondary-color);
+        height: auto;
+        color: white;
+        padding: 5rem 6rem;
+    }
+
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    .about-content .content {
+        width: 210%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        font-size: 1.3rem;
+    }
+
+    .content {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .content>p {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+
+
+    .contact-content form {
+        max-width: 72rem;
+    }
+
+    }
+    .footer-article {
+        margin-top: 25rem;
+        color: white;
+        background-color: var(--primary-color);
+    }
+    .footer-section{
+        width: auto;
+    }
+
 
     .footer-first-article {
         display: flex;
