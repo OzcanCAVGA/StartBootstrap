@@ -342,18 +342,14 @@ textarea {
     background-color: var(--primary-color);
 }
 
+.first-article-container {}
+
 .footer-first-article {
     display: flex;
-    justify-content: center;
-    height: 20rem;
-    font-size: large;
-    width: 60%;
+    padding: 5rem 23rem;
+}
 
-}
-.first-article-container{
-    display: flex;
-    justify-content: center;
-}
+
 
 .footer-second-article {
     background-color: var(--tertiary-color);
@@ -500,7 +496,25 @@ textarea {
         width: 47rem;
     }
 
-    .content>p {}
+    .footer-article {
+        margin-top: 25rem;
+        color: white;
+        background-color: var(--primary-color);
+    }
+
+    .first-article-container {}
+
+    .footer-first-article {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
 
     .about-content button {
         font-family: 'Lato', sans-serif;
