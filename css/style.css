@@ -8,7 +8,8 @@
 }
 
 html {
-        scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    font-size: 10px;
 }
 
 * {
@@ -20,7 +21,7 @@ header {
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
-    padding: 16px 0;
+    padding: 1.6rem 0;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -32,7 +33,7 @@ header {
     margin-left: 16%;
     color: white;
     font-weight: 700;
-    font-size: 21px;
+    font-size: 2.1rem;
     cursor: pointer;
 }
 
@@ -49,7 +50,17 @@ header {
 .navbar>ul li {
     color: white;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+.navbar-button {
+    display: none;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 li>a {
@@ -57,7 +68,7 @@ li>a {
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
-    padding: 13px;
+    padding: 1.3rem;
 
 }
 
@@ -67,9 +78,9 @@ li>a:hover {
 
 li>a:active {
     background-color: var(--secondary-color);
-    padding: 13px;
+    padding: 1.3rem;
     color: white;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 
 #startBootstrap {
@@ -79,35 +90,35 @@ li>a:active {
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 100px 0;
-    padding-top: 130px;
+    padding: 10rem 0;
+    padding-top: 13rem;
 }
 
 .star-img {
-    height: 190px;
-    padding: 25px;
+    height: 19rem;
+    padding: 2.5rem;
 
 }
 
 #startBootstrap>h1 {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 4.8rem;
     color: white;
 
 }
 
 .star-title {
     font-weight: 700;
-    font-size: 35px;
+    font-size: 3.5rem;
     color: var(--primary-color);
-    padding: 5px;
+    padding: 0.5rem;
 }
 
 .star-title-secondary {
     font-weight: 700;
-    font-size: 35px;
+    font-size: 3.5rem;
     color: white;
-    padding: 8px;
+    padding: 0.8rem;
 }
 
 .content-header {
@@ -119,8 +130,8 @@ li>a:active {
 
 .content-header>p {
     font-family: 'Lato', sans-serif;
-    padding: 15px;
-    font-size: 18px;
+    padding: 1.5rem;
+    font-size: 1.8rem;
     color: white;
     font-weight: 400;
 
@@ -129,16 +140,16 @@ li>a:active {
 
 
 .header-minus {
-    width: 80px;
-    border: 2px solid white;
-    border-radius: 5px;
-    margin: 20px 10px;
+    width: 8rem;
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+    margin: 2rem 1rem;
 }
 
 .star {
 
     color: var(--primary-color);
-    font-size: 25px;
+    font-size: 2.5rem;
     display: flex;
     align-items: center;
 }
@@ -146,26 +157,26 @@ li>a:active {
 .star-secondary {
 
     color: white;
-    font-size: 25px;
+    font-size: 2.5rem;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 1rem;
 }
 
 
 
 .minus {
-    width: 80px;
-    border: 2px solid var(--primary-color);
-    border-radius: 5px;
-    margin: 15px;
+    width: 8rem;
+    border: 0.2rem solid var(--primary-color);
+    border-radius: 0.5rem;
+    margin: 1.5rem;
 }
 
 .minus-secondary {
-    width: 80px;
-    border: 2px solid white;
-    border-radius: 5px;
-    margin: 15px;
+    width: 8rem;
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+    margin: 1.5rem;
 }
 
 
@@ -175,28 +186,30 @@ li>a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 70px;
+    padding: 7rem;
 
 }
 
 .portfolio-content {
-    padding: 25px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 40px 150px;
+    padding: 2.5rem;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     cursor: pointer;
 }
 
-.portfolio-grid-item {
-    white-space: nowrap;
-    height: 220px;
-    border-radius: 6px;
+
+.portfolio-flex-item {
+    height: 22rem;
+    border-radius: 0.6rem;
+
 }
 
 .image-container {
     position: relative;
     display: inline-block;
+    margin: 1.8rem 6rem;
 
 }
 
@@ -205,11 +218,11 @@ li>a:active {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 99%;
     background-color: rgba(26, 188, 156, 0.9);
     opacity: 0;
     transition: opacity 0.3s ease;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,7 +239,7 @@ li>a:active {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 60px;
+    font-size: 6rem;
 }
 
 #about {
@@ -235,9 +248,9 @@ li>a:active {
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-color);
-    height: 360px;
+    height: 36rem;
     color: white;
-    padding: 15px;
+    padding: 1.5rem;
 }
 
 .about-content {
@@ -248,28 +261,30 @@ li>a:active {
 }
 
 .about-content .content {
-
+    width: 100%;
     display: flex;
-    font-size: 13px;
+    justify-content: start;
+    align-items: start;
+    font-size: 1.3rem;
 }
 
 .content>p {
 
-    padding: 10px;
-    line-height: 22px;
+    padding: 1rem;
+    line-height: 2.2rem;
     font-weight: 300;
-    font-size: 15px;
-    margin: 12px;
+    font-size: 1.5rem;
+    margin: 1.2rem;
 }
 
 .about-content button {
     font-family: 'Lato', sans-serif;
 
     width: auto;
-    padding: 15px 20px;
-    font-size: 16px;
-    border: 1px solid white;
-    border-radius: 5px;
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+    border: 0.1rem solid white;
+    border-radius: 0.5rem;
     background-color: var(--secondary-color);
     color: white;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -277,33 +292,35 @@ li>a:active {
 }
 
 .about-content button>i {
-    margin-right: 5px;
+    margin-right: 0.5rem;
 
 }
+
 .about-content button:hover {
     background-color: white;
     color: black;
     cursor: pointer;
 }
+
 #contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 6rem;
 }
 
 .contact-content form {
     display: flex;
     flex-direction: column;
-    width: 800px;
-    height: 250px;
+    width: 80rem;
+    height: 25rem;
 }
 
 .contact-content form>input,
 textarea {
-    padding: 15px;
-    margin: 15px;
-    font-size: 18px;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    font-size: 1.8rem;
     border: none;
     border-bottom: 1px solid #CED4DA;
     font-weight: 400;
@@ -314,28 +331,33 @@ textarea {
 .form-button {
     background-color: #69D3BE;
     color: white;
-    width: 70px;
-    border-radius: 5px;
+    width: 7rem;
+    border-radius: 0.5rem;
 
 }
 
 .footer-article {
-    margin-top: 250px;
+    margin-top: 25rem;
     color: white;
     background-color: var(--primary-color);
-
 }
 
 .footer-first-article {
     display: flex;
-    justify-content: space-around;
-    height: 200px;
+    justify-content: center;
+    height: 20rem;
     font-size: large;
+    width: 60%;
+
+}
+.first-article-container{
+    display: flex;
+    justify-content: center;
 }
 
 .footer-second-article {
     background-color: var(--tertiary-color);
-    padding: 22px;
+    padding: 2.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -353,17 +375,24 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 33%;
 
-
-    font-size: 15px;
+    font-size: 1.5rem;
     text-align: center;
 }
-.footer-section>p>a{
+
+.footer-section>p>a {
     color: var(--secondary-color);
 }
-.footer-section>p>a:hover{
+
+.footer-section>h3 {
+    padding: 1.5rem;
+}
+
+.footer-section>p>a:hover {
     color: #15967d;
 }
+
 .social-web {
     display: flex;
     justify-content: space-around;
@@ -375,17 +404,116 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    border: 0.1rem solid white;
     border-radius: 9999px;
-    padding: 5px;
-    font-size: 15px;
-    margin: 5px;
-    height: 25px;
-    width: 25px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .circle:hover {
     background-color: white;
     color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin-left: 5%;
+    }
+
+    #startBootstrap {
+        text-align: center;
+    }
+
+    .navbar>ul>li {
+        display: none;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .navbar>ul>li:last-child {
+        display: block;
+        padding: 1rem 0.5rem;
+
+    }
+
+    li>a,
+    li>a:active {
+
+        padding: 1rem;
+    }
+
+
+    .portfolio-content {
+        padding: 2.5rem;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        cursor: pointer;
+    }
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+        margin: 1.8rem 2rem;
+    }
+
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--secondary-color);
+        color: white;
+        height: auto;
+        padding: 3rem 0;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    .about-content .content {
+        width: 210%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        font-size: 1.3rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-content form {
+        width: 47rem;
+    }
+
+    .content>p {}
+
+    .about-content button {
+        font-family: 'Lato', sans-serif;
+
+        width: auto;
+        padding: 1.5rem 2rem;
+        font-size: 1.6rem;
+        border: 0.1rem solid white;
+        border-radius: 0.5rem;
+        background-color: var(--secondary-color);
+        color: white;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+    }
+
 }
